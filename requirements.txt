@@ -1,8 +1,6 @@
-fastapi
-uvicorn[standard]
-gradio>=3.0
-TTS
+fastapi==0.115.0
+uvicorn==0.32.0
+gradio==5.5.0
+TTS==0.22.0
+torch>=2.0.0
 numpy
-pydub
-requests
-pydantic
