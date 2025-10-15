@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Emotion Voice — Landing</title>
+    <style>
+      :root{--bg:#f7fafc;--card:#fff;--accent:#3b82f6;--muted:#6b7280}
+      body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0;background:var(--bg);color:#111}
+      .wrap{max-width:1100px;margin:32px auto;padding:20px}
+      .hero{display:flex;gap:20px;align-items:center}
+      .hero .left{flex:1}
+      .hero .right{width:360px}
+      .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+      .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+      a.lure{display:inline-block;margin-top:12px;color:var(--accent);text-decoration:none}
+      footer{margin-top:30px;color:var(--muted);font-size:14px}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero">
+        <div class="left">
+          <div class="card">
+            <h1>🎧 Emotion Voice — Demo</h1>
+            <p>Create realistic voices with age and emotion control. Works beautifully on phones, tablets, and laptops.</p>
+            <p><a class="btn" href="/app" role="button">Open Voice Generator</a></p>
+            <p>Want to learn more? <a class="lure" href="#ad">Read an interesting article</a></p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="card">
+            <h3>Quick facts</h3>
+            <ul>
+              <li>Responsive UI (Gradio)</li>
+              <li>Age & emotion mixing</li>
+              <li>Ad content loaded on demand</li>
+            </ul>
+            <p><a class="btn" href="/app">Try it now</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ad" style="margin-top:28px">
+        <div class="card">
+          <h3>Featured</h3>
+          <p>The full content will appear when you open the generator and click "Read more".</p>
+        </div>
+      </div>
+
+      <footer>
+        &copy; <span id="y"></span> Emotion Voice
+      </footer>
+    </div>
+    <script>document.getElementById('y').innerText=new Date().getFullYear();</script>
+  </body>
+</html>
