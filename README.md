@@ -17,16 +17,6 @@ This repo is a ready-to-deploy project for Render.com (FastAPI + Gradio) that ex
 ## Notes
 - If the Coqui `TTS` model is too heavy for the free instance, enable an ElevenLabs fallback. You can modify `synthesize_audio` to call ElevenLabs REST API when local TTS is unavailable.
 - `sw.js` is served from `/sw.js` because `static/` is mounted at the site root.
-- ---
-
-## Final notes
-- The ad iframe is intentionally **lazy-loaded** (only inserted into the page when the user clicks "Read more" inside the Gradio UI), so it won't interfere with the main user experience.
-- The "Complete" action is gated so the user must open the ad iframe once to activate it — implemented client-side inside the Gradio app.
-
-If you'd like, I can also:
-- Add an ElevenLabs fallback implementation in `server.py` (requires you to set `ELEVEN_API_KEY` as an environment variable on Render).
-- Produce a ZIP of this repo (or push to a GitHub repo for you if you give a repo name).
-
 
 ---
 
