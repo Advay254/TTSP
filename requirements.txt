@@ -1,6 +1,14 @@
-fastapi==0.115.0
-uvicorn==0.32.0
-gradio==5.5.0
+# Core web & async stack
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Gradio UI (compatible with FastAPI)
+gradio==4.36.1
+
+# TTS engine (Coqui)
 TTS==0.22.0
 torch>=2.0.0
 numpy
+
+# Utility deps
+jinja2
